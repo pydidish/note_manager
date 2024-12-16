@@ -12,7 +12,10 @@ def check_valid_date(text):
 
 
 username = "Анастасий"  # имя пользователя получает программа заранее
-title = input("Введите заголовок заметки ")  # заголовок заметки
+titles = []
+for i in range(3):
+    title = input(f"Введите заголовок {i + 1} заметки ")  # заголовок заметки
+    titles.append(title)
 content = input("Введите описание заметки ")  # описание заметки
 status = "Создана"  # описание заметки при создании автоматически устанавливается в состояние "Создана"
 created_date = datetime.today().strftime(
@@ -22,7 +25,7 @@ issue_date = check_valid_date(
 
 print("\nВы ввели следующие данные:")
 print("Имя пользователя:", username)
-print("Заголовок заметки:", title)
+print("Заголовки заметки:", titles)
 print("Описание заметки:", content)
 print("Статус заметки:", status)
 print("Дата создания заметки:", created_date)
