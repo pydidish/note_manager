@@ -127,14 +127,15 @@ def delete_notes(list_notes, gr):
                 if fl.lower() == 'да':
                     list_notes.pop(i-f)
                     f += 1
+                    print("\nЗаметка успешно удалена")
         if f == 0:
             print("\nЗаметок с таким именем пользователя или заголовком не найдено.")
         else:
             if len(list_notes) != 0:
-                print("\nУспешно удалено. Остались следующие заметки:")
+                print("\nОстались следующие заметки:")
                 output_note(list_notes)
             else:
-                print("\nУспешно удалено. Заметок в списке не осталось")
+                print("\nЗаметок в списке не осталось")
 
 
 notes = create_list_notes()
