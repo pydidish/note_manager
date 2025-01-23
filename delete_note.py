@@ -103,7 +103,7 @@ def create_list_notes():
         if flag.lower() == 'да':
             note = create_note(list_notes)
             list_notes.append(note)
-            flag = input('Хотите добавить ещё одну заметку? (да/нет): ')
+            flag = input('\nХотите добавить ещё одну заметку? (да/нет): ')
         else:
             flag = input('Некорректный ввод! Хотите добавить ещё одну заметку? (да/нет): ')
     return list_notes
