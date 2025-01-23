@@ -128,6 +128,8 @@ def delete_notes(list_notes, gr):
                     list_notes.pop(i-f)
                     f += 1
                     print("\nЗаметка успешно удалена")
+                elif fl.lower() == 'нет':
+                    print("\nУдаление заметки отменено")
         if f == 0:
             print("\nЗаметок с таким именем пользователя или заголовком не найдено.")
         else:
